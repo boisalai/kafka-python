@@ -9,8 +9,7 @@ I use the datasets [fhv_tripdata_2019-01.csv.gz](https://github.com/DataTalksClu
 I'm using a macOS computer.
 
 To develop this application, I followed this article:<br>
-[How to send tabular time series data to Apache Kafka with Python and Pandas]
-(https://towardsdatascience.com/how-to-send-tabular-time-series-data-to-apache-kafka-with-python-and-pandas-39e2055373c3) from Tomáš Neubauer.
+[How to send tabular time series data to Apache Kafka with Python and Pandas](https://towardsdatascience.com/how-to-send-tabular-time-series-data-to-apache-kafka-with-python-and-pandas-39e2055373c3) from Tomáš Neubauer.
 
 ## Step 0: Create conda environment
 
@@ -248,3 +247,12 @@ I see that the most popular `PULocationID` vary from batch to batch, but are alw
 
 Note that the "taxi zones" are presented in the file [Taxi Zone Lookup Table](https://d37ci6vzurychx.cloudfront.net/misc/taxi+_zone_lookup.csv).
 
+## Step 5: Terminating the Kafka Environment
+
+You can terminate the Kafka CLI operations in a sequence.
+
+1. Stop the producer and consumer clients by pressing the `CTRL+C` key combination.
+2. Stop running Kafka broker with `CTRL+C`.
+3. Then, stop the ZooKeeper service with `CTRL+C`.
+
+Last updated: March 11, 2023
